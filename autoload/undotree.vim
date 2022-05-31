@@ -937,7 +937,7 @@ function! s:undotree.Render() abort
                         let newline = newline.g:undotree_TreeVertShape.' '
                     endif
                     if i > index
-                        let newline = newline.' '.g:undotree_TreeReturnShape
+                        let newline = newline.g:undotree_TreeReturnShape
                     endif
                 endfor
             endif
@@ -974,7 +974,7 @@ function! s:undotree.Render() abort
                     let newline = newline.g:undotree_TreeVertShape." "
                 endif
                 if k == index
-                    let newline = newline.g:undotree_TreeVertShape.g:undotree_TreeSplitShape." "
+                    let newline = newline.g:undotree_TreeSplitBarShape." "
                 endif
                 if k > index
                     let newline = newline.g:undotree_TreeSplitShape." "

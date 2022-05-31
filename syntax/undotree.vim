@@ -8,7 +8,7 @@ execute "syn match UndotreeNode ' \\zs".escape(g:undotree_TreeNodeShape,'*')."\\
 execute "syn match UndotreeNodeCurrent '\\zs".escape(g:undotree_TreeNodeShape,'*')."\\ze.*>\d\+<'"
 syn match UndotreeTimeStamp '(.*)$'
 syn match UndotreeFirstNode 'Original'
-execute "syn match UndotreeBranch '[".escape(g:undotree_TreeVertShape.g:undotree_TreeSplitShape.g:undotree_TreeReturnShape,'\')."]'"
+execute "syn match UndotreeBranch '[".escape(g:undotree_TreeVertShape.g:undotree_TreeSplitBarShape.g:undotree_TreeSplitShape.g:undotree_TreeReturnShape,'\')."]'"
 syn match UndotreeSeq ' \zs\d\+\ze '
 syn match UndotreeCurrent '>\d\+<'
 syn match UndotreeNext '{\d\+}'
